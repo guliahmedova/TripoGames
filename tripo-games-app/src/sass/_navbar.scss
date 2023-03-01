@@ -1,0 +1,141 @@
+.navbar {
+    height: auto;
+    padding: 0%;
+    line-height: 2;
+
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+    transition: top 0.6s;
+
+    .container {
+        align-items: normal;
+    }
+
+    .logo {
+        width: auto;
+        text-align: center;
+        padding: 0 1rem;
+        background-color: $base-red;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        a {
+            font-size: 26px;
+            font-weight: 800;
+            color: white;
+        }
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: auto;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-color: white;
+        li:first-of-type {
+            border-bottom-left-radius: 10px;
+        }
+        li:last-child {
+            border-bottom-right-radius: 10px;
+        }
+        margin: 0%;
+        padding: 0%;
+
+        .item {
+            padding: 0 1rem;
+            text-align: center;
+            a {
+                line-height: 3;
+                font-size: 20px;
+                color: gray;
+            }
+
+            &:hover {
+                transition: 0.5s all ease;
+                background-color: $base-red;
+                a {
+                    color: white !important;
+                }
+            }
+        }
+    }
+
+    .mobile-menu-icon {
+        border: none;
+        display: none;
+        padding: 0%;
+        margin: 0;
+    }
+}
+
+.active-red {
+    a {
+        color: $base-red !important;
+    }
+}
+
+.logo-none {
+    display: none;
+}
+
+.animate {
+    top: -71px;
+}
+
+.sticky {
+    top: 0%;
+    transition: 0.3s linear;
+    z-index: 10;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        transition: all 0.5s ease;
+
+        .nav-links {
+            display: none;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .logo {
+            line-height: 2.5;
+        }
+
+        .nav-links-mobile {
+            position: absolute;
+            display: block;
+            left: 0;
+            top: 10%;
+            transition: all 0.5s ease;
+            width: 100%;
+            font-size: 50px;
+            background-color: white;
+            height: 100vh;
+            margin: 0%;
+
+            li {
+                a {
+                    color: gray;
+                }
+            }
+        }
+        .mobile-menu-icon {
+            position: absolute;
+            display: block;
+            right: 50px;
+            font-size: 40px;
+            padding: 0.8rem 1rem;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background-color: white;
+        }
+    }
+}
