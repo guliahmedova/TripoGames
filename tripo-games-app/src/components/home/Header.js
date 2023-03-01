@@ -22,6 +22,7 @@ export default function Header() {
     // const imageStyle = {
     //     transform: `translate3d(${scrollPosition}px,0 , 0)`,
     // };
+    //
 
 
     const headerCards = headerCardData.map((card) => {
