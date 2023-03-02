@@ -2,8 +2,7 @@ import { useState, useEffect } from "react";
 import Navbar from "../Navbar";
 import headerCardData from "../../datas/headerCartData";
 import HeaderCard from "./HeaderCard";
-import { BsArrowDown } from "react-icons/bs"
-import { Link } from "react-router-dom";
+import HeaderSimpleCard from "./HeaderSimpleCard";
 
 export default function Header() {
 
@@ -68,14 +67,7 @@ export default function Header() {
                 <div className="container">
                     <div className="row">
                         {headerCards}
-                        <div className="col-lg-3 col-md-6 col-sm-12 mb-3">
-                            <Link to="/test" className="custom-card">
-                                <div className="card-footer">
-                                    <h2>Explore Our Games</h2>
-                                    <p><BsArrowDown /></p>
-                                </div>
-                            </Link>
-                        </div>
+                        <HeaderSimpleCard />
                     </div>
                 </div>
             </section>

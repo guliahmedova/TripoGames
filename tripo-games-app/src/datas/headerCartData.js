@@ -1,3 +1,5 @@
+import { BsArrowDown } from "react-icons/bs"
+
 export default [
     {
         id: "1",
@@ -19,5 +21,5 @@ export default [
         desc: "Adventure - Free",
         img: "./images/home/hero_card_3.webp",
         to: "/treasureBox"
-    }
+    },
 ]

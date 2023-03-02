@@ -2,25 +2,47 @@
     position: relative;
     bottom: 10rem;
     // margin-top: 12rem;
+
+
     .card {
         border-radius: 10px;
         border: none;
+        overflow: hidden;
+     
+
+        .gradient{
+            width: 100%;
+            height: 100%;
+            background-color: red;
+            position: absolute;
+            z-index: 11;
+            background-image: linear-gradient(to top, #bd3426, rgb(69, 69, 41));
+            opacity: 0.5;
+            display: none;
+        }
+
         img {
             width: 100%;
             height: 100%;
             border-radius: 10px;
             object-fit: cover;
             position: relative;
+            transition: 0.3s;
+            border: none;
         }
 
         &:hover {
             img {
-                transform: scale(1.11);
-                transition: all 0.5s ease-in;
+                transform: scale(1.1);
+                transition: all 0.25s ease-in;
             }
             .card-footer {
                 transition: all 0.5s ease-in-out;
                 display: none;
+            }
+            .gradient{
+                transition: all 0.5s ease-in-out;
+                display: block;
             }
         }
 
@@ -29,6 +51,7 @@
             bottom: 0%;
             color: white;
             padding: 1rem;
+            transition: all 0.5s;
             h2 {
                 font-size: 18px;
                 font-weight: 900;
@@ -41,17 +64,38 @@
     }
 
     .custom-card {
-        width: 1005;
+        display: block;
+        background-color: yellow;
+        width: 100%;
+        height: 100%;
         border-radius: 10px;
         border: none;
-        height: 100%;
-        background-color: yellow;
-        .card-footer{
+        overflow: hidden;
+        transition: all 0.5s ease-out;
+        &:hover {
+            background-image: linear-gradient(to top, #bd3426, yellow);
+            .card-footer {
+                transition: all 0.5s ease-in-out;
+                transform: scale(1.1);
+            }
+        }
+
+        .card-footer {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            height: 100%;
             margin: auto;
+            h2 {
+                color: black;
+                text-align: center;
+                font-weight: 600;
+            }
+            p {
+                color: black;
+                font-size: 30px;
+            }
         }
     }
 }

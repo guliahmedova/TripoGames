@@ -1,7 +1,7 @@
-import Header from "./components/home/Header";
+import Home from "./pages/Home";
 function App() {
   return (
-    <Header />
+    <Home />
   );
 }
 

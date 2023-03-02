@@ -125,7 +125,7 @@ li {
   width: auto;
   text-align: center;
   padding: 0 1rem;
-  background-color: #DA392B;
+  background-color: #da392b;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -165,7 +165,7 @@ li {
 }
 .navbar .nav-links .item:hover {
   transition: 0.5s all ease;
-  background-color: #DA392B;
+  background-color: #da392b;
 }
 .navbar .nav-links .item:hover a {
   color: white !important;
@@ -178,7 +178,7 @@ li {
 }
 
 .active-red a {
-  color: #DA392B !important;
+  color: #da392b !important;
 }
 
 .logo-none {
@@ -235,7 +235,6 @@ li {
 .header {
   width: 100%;
   position: relative;
-  height: 200vh;
 }
 .header .herp-img {
   width: 1823.04px;
@@ -270,6 +269,17 @@ li {
 .header-card .card {
   border-radius: 10px;
   border: none;
+  overflow: hidden;
+}
+.header-card .card .gradient {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  position: absolute;
+  z-index: 11;
+  background-image: linear-gradient(to top, #bd3426, rgb(69, 69, 41));
+  opacity: 0.5;
+  display: none;
 }
 .header-card .card img {
   width: 100%;
@@ -277,20 +287,27 @@ li {
   border-radius: 10px;
   object-fit: cover;
   position: relative;
+  transition: 0.3s;
+  border: none;
 }
 .header-card .card:hover img {
-  transform: scale(1.11);
-  transition: all 0.5s ease-in;
+  transform: scale(1.1);
+  transition: all 0.25s ease-in;
 }
 .header-card .card:hover .card-footer {
   transition: all 0.5s ease-in-out;
   display: none;
+}
+.header-card .card:hover .gradient {
+  transition: all 0.5s ease-in-out;
+  display: block;
 }
 .header-card .card .card-footer {
   position: absolute;
   bottom: 0%;
   color: white;
   padding: 1rem;
+  transition: all 0.5s;
 }
 .header-card .card .card-footer h2 {
   font-size: 18px;
@@ -301,16 +318,112 @@ li {
   font-weight: 400;
 }
 .header-card .custom-card {
-  width: 1005;
+  display: block;
+  background-color: yellow;
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
   border: none;
-  height: 100%;
-  background-color: yellow;
+  overflow: hidden;
+  transition: all 0.5s ease-out;
+}
+.header-card .custom-card:hover {
+  background-image: linear-gradient(to top, #bd3426, yellow);
+}
+.header-card .custom-card:hover .card-footer {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.1);
 }
 .header-card .custom-card .card-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100%;
   margin: auto;
+}
+.header-card .custom-card .card-footer h2 {
+  color: black;
+  text-align: center;
+  font-weight: 600;
+}
+.header-card .custom-card .card-footer p {
+  color: black;
+  font-size: 30px;
+}
+
+.home-about-sec .title-content {
+  color: #272443;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home-about-sec .title-content h2 {
+  text-align: center;
+  font-size: 21px;
+}
+.home-about-sec .title-content h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 800;
+}
+.home-about-sec .title-content p {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.home-about-sec .title-content .learn-more {
+  width: 142px;
+  transition: all 0.5s ease;
+  height: 60px;
+  background-color: #da392b;
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+  cursor: pointer;
+  border: 1px solid #da392b;
+}
+.home-about-sec .title-content .learn-more:hover {
+  background-color: transparent;
+  border: 1px solid #272443;
+}
+.home-about-sec .title-content .learn-more:hover a {
+  color: #272443;
+}
+.home-about-sec .title-content .learn-more a {
+  color: white;
+  white-space: nowrap;
+}
+.home-about-sec .title-content .imgs {
+  position: relative;
+}
+.home-about-sec .title-content .imgs .gradient {
+  width: 698px;
+  height: 396px;
+  background-color: red;
+  transition: all 0.5s ease;
+  opacity: 0.2;
+  display: none;
+}
+.home-about-sec .title-content .imgs .main-img {
+  width: 698px;
+  height: 396px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-radius: 10px;
+}
+.home-about-sec .title-content .imgs .main-img:hover .gradient {
+  display: block;
+}
+.home-about-sec .title-content .imgs .goat {
+  position: absolute;
+  width: 229px;
+  height: 246px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  bottom: -50px;
+  left: -80px;
 }

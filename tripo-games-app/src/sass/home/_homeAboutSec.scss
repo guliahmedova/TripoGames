@@ -1,0 +1,84 @@
+.home-about-sec {
+    .title-content {
+        color: $base-dark-blue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h2 {
+            text-align: center;
+            font-size: 21px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            font-weight: 800;
+        }
+        p {
+            margin-top: 1.5rem;
+            text-align: center;
+        }
+
+        .learn-more {
+            width: 142px;
+            transition: all 0.5s ease;
+            height: 60px;
+            background-color: $base-red;
+            border-radius: 10px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin: 3rem 0;
+            cursor: pointer;
+            border: 1px solid $base-red;
+
+            &:hover {
+                background-color: transparent;
+                border: 1px solid $base-dark-blue;
+                a {
+                    color: $base-dark-blue;
+                }
+            }
+            a {
+                color: white;
+                white-space: nowrap;
+            }
+        }
+
+        .imgs {
+            position: relative;
+
+            .gradient {
+                width: 698px;
+                height: 396px;
+                background-color: red;
+                transition: all 0.5s ease;
+                opacity: 0.2;
+                display: none;
+            }
+            .main-img {
+                width: 698px;
+                height: 396px;
+                object-fit: cover;
+                object-position: 50% 50%;
+                border-radius: 10px;
+
+                &:hover {
+                    .gradient {
+                        display: block;
+                    }
+                }
+            }
+            .goat {
+                position: absolute;
+                width: 229px;
+                height: 246px;
+                object-fit: cover;
+                object-position: 50% 50%;
+                bottom: -50px;
+                left: -80px;
+            }
+        }
+    }
+}
