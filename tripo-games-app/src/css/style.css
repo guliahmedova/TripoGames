@@ -268,8 +268,9 @@ li {
 }
 .header-card .card {
   border-radius: 10px;
-  border: none;
+  background-color: transparent;
   overflow: hidden;
+  border: none;
 }
 .header-card .card .gradient {
   width: 100%;
@@ -289,6 +290,7 @@ li {
   position: relative;
   transition: 0.3s;
   border: none;
+  display: block;
 }
 .header-card .card:hover img {
   transform: scale(1.1);
@@ -405,8 +407,13 @@ li {
   height: 396px;
   background-color: red;
   transition: all 0.5s ease;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+}
+.home-about-sec .title-content .imgs .gradient:hover {
+  transition: all 0.5s ease;
   opacity: 0.2;
-  display: none;
 }
 .home-about-sec .title-content .imgs .main-img {
   width: 698px;
@@ -415,11 +422,9 @@ li {
   object-position: 50% 50%;
   border-radius: 10px;
 }
-.home-about-sec .title-content .imgs .main-img:hover .gradient {
-  display: block;
-}
 .home-about-sec .title-content .imgs .goat {
   position: absolute;
+  z-index: 1;
   width: 229px;
   height: 246px;
   object-fit: cover;

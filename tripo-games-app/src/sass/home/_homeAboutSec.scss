@@ -54,8 +54,13 @@
                 height: 396px;
                 background-color: red;
                 transition: all 0.5s ease;
-                opacity: 0.2;
-                display: none;
+                position: absolute;
+                z-index: 1;
+                opacity: 0;
+                &:hover {
+                    transition: all .5s ease;
+                    opacity: 0.2;
+                }
             }
             .main-img {
                 width: 698px;
@@ -63,15 +68,10 @@
                 object-fit: cover;
                 object-position: 50% 50%;
                 border-radius: 10px;
-
-                &:hover {
-                    .gradient {
-                        display: block;
-                    }
-                }
             }
             .goat {
                 position: absolute;
+                z-index: 1;
                 width: 229px;
                 height: 246px;
                 object-fit: cover;
