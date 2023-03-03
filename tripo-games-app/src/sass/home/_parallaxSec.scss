@@ -1,0 +1,215 @@
+.parralex-sec {
+    position: relative;
+    margin-top: 10rem;
+
+    //top-parallax
+    .top-parallax {
+        background-color: var(--clr-dark);
+        background-image: url("~/public/images/home/dragon.webp");
+        background-blend-mode: overlay;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+
+        .title {
+            color: white;
+            margin-top: 8rem;
+            span {
+                font-size: 21px;
+            }
+            h1 {
+                font-size: 50px;
+                font-weight: 900;
+                line-height: 1.5;
+                margin: 1.5rem 0 3rem 0;
+            }
+            a {
+                width: 150px;
+                height: 60px;
+                background-color: #fcff72;
+                color: $base-dark-blue;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                border-radius: 5px;
+                padding: 1rem;
+            }
+        }
+    }
+
+    //form-card
+    .bottom-parallax {
+        background-color: var(--clr-dark);
+        background-image: url("~/public/images/home/stars.webp");
+        background-blend-mode: overlay;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        position: relative;
+        .gradient {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: black;
+            opacity: 0.2;
+        }
+        .left-side {
+            position: absolute;
+            z-index: 1;
+            background-color: white;
+            border-radius: 10px;
+            padding: 2rem;
+            bottom: 300px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            .title {
+                h1 {
+                    font-size: 34px;
+                    color: $base-dark-blue;
+                    font-weight: 900;
+                    margin-bottom: 1.5rem;
+                }
+                p {
+                    color: $base-dark-blue;
+                    line-height: 1.6em;
+                    font-size: 18px;
+                }
+            }
+            form {
+                input {
+                    padding: 1rem;
+                }
+                label {
+                    color: $base-dark-blue;
+                    font-weight: 100;
+                    margin-bottom: 1rem;
+                }
+                .names {
+                    display: flex;
+                    justify-content: space-between;
+                    .frm {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    input {
+                        width: 165px;
+                        height: 60px;
+                        border: 1px solid $base-dark-blue;
+                        border-radius: 10px;
+                        &:hover {
+                            border: 2px solid black;
+                        }
+                    }
+                }
+                .email {
+                    display: flex;
+                    flex-direction: column;
+                    input {
+                        width: 350px;
+                        height: 60px;
+                        border: 1px solid $base-dark-blue;
+                        border-radius: 10px;
+                        &:hover {
+                            border: 2px solid black;
+                        }
+                    }
+                }
+                .msj {
+                    display: flex;
+                    flex-direction: column;
+                    textarea {
+                        width: 350px;
+                        height: 60px;
+                        resize: none;
+                        padding: 1rem;
+                        border: 1px solid $base-dark-blue;
+                        border-radius: 10px;
+                        &:hover {
+                            border: 2px solid black;
+                        }
+                    }
+                }
+                .btn {
+                    height: 60px;
+                    width: 350px;
+                    background-color: $base-dark-blue;
+                    margin-top: 1rem;
+                    border-radius: 5px;
+                    color: white;
+                    &:hover {
+                        transition: 0.5s all ease;
+                        background-color: $base-red;
+                    }
+                }
+            }
+        }
+
+        .right-side {
+            display: flex;
+            justify-content: center;
+            img {
+                width: 488px;
+                height: 414px;
+                object-fit: cover;
+                object-position: 50% 50%;
+                position: absolute;
+                bottom: 721px;
+            }
+            .send-email {
+                position: absolute;
+                width: 388px;
+                height: 210px;
+                background-color: $base-red;
+                border-radius: 10px;
+                padding: 2rem;
+                top: 200px;
+                h1 {
+                    font-size: 21px;
+                    margin-bottom: 1rem;
+                    color: white;
+                }
+
+                form {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1rem;
+                    button{
+                        width: 79px;
+                        height: 60px;
+                        background-color: #FCFF72;
+                        border-radius: 10px;
+                        margin-top: 2.5rem;
+                        &:hover{
+                            background-color: white;
+                            transition: .5s all ease;
+                        }
+                    }
+                    .email {
+                        display: flex;
+                        flex-direction: column;
+                        input {
+                            padding: 1rem;
+                        }
+                        label {
+                            color: white;
+                            font-weight: 100;
+                            margin-bottom: 1rem;
+                        }
+                       
+                    }
+                    input {
+                        width: 238px;
+                        height: 60px;
+                        border: 1px solid $base-dark-blue;
+                        border-radius: 10px;
+                        &:hover {
+                            border: 2px solid black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

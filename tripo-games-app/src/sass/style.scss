@@ -1,9 +1,14 @@
 @import "./resetcss";
 @import "./variables.scss";
-@import './utilities/utilities';
+@import "./utilities/utilities";
 
 @import "./navbar";
+@import "./footer";
 
 @import "./home/header";
 @import "./home/headerCard";
 @import "./home/homeAboutSec";
+@import "./home/ourGames";
+@import "./home/ourGamesCard";
+@import "./home/parallaxSec";
+

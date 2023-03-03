@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 export default function HomeAboutSec() {
     return (
-        <section className="home-about-sec">
+        <section className="home-about-sec my-5">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12">

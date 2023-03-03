@@ -1,0 +1,98 @@
+.our-games-sec {
+    .cards {
+        position: relative;
+        width: 100%;
+        background-image: url("~/public/images/home/p_main.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.9012;
+        transform: translate3d(0px, 0px, 0px);
+        visibility: inherit;
+        width: auto;
+        height: 1181.2px;
+        left: 0px;
+        top: 0px;
+        .card {
+            padding: 2rem;
+            width: 390px;
+            position: absolute;
+            height: auto;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            background-color: white;
+            .card-header {
+                border: none;
+                background-color: white;
+                display: flex;
+                gap: 1rem;
+
+                .img {
+                    border: 5px solid $base-dark-blue;
+                    width: 78px;
+                    height: 78px;
+                    object-fit: cover;
+                    object-position: 50% 50%;
+                    border-radius: 10px;
+                    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+                }
+
+                .names {
+                    a {
+                        color: $base-dark-blue;
+                        font-size: 21px;
+                        font-weight: 800;
+                    }
+                    p {
+                        line-height: 1.6em;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .card-content {
+                width: 100%;
+                margin: 0.5rem;
+                .desc {
+                    p {
+                        line-height: 1.6em;
+                        color: $base-dark-blue;
+                        font-size: 16px;
+                    }
+                }
+                .imgs {
+                    display: flex;
+                    justify-content: space-between;
+                    img {
+                        width: 120px;
+                        height: 40px;
+                        object-fit: cover;
+                        object-position: 50% 50%;
+                    }
+                }
+            }
+        }
+
+        .card-11 {
+            top: 0%;
+            left: 0%;
+        }
+        .card-22 {
+            top: 0%;
+            right: 0%;
+        }
+        .card-33 {
+            top: 800px;
+        }
+        .img-card{
+            position: absolute;
+            top: 800px;
+            right: 0%;
+            display: block;
+            img{
+                width: 274px;
+                height: 300px;
+                object-fit: cover;
+                object-position: 50% 50%;
+            }
+        }
+    }
+}
