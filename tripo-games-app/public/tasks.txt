@@ -1,11 +1,15 @@
 1. make the project a pwa project
 2. responsive
 3. dynamic
+4. pwa project
+
+navbar
+1. dropdown
 
 
 
 Home Page 
-1. scroll animations
+1. scroll animations + 
 2. responsive
-3. page load olanda bezi animasayalar var onlari make it
+3. page load olanda bezi animasayalar var onlari make it +
 4. link pathlerini vermek

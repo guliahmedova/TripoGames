@@ -1,6 +1,9 @@
 .header-card {
-    position: relative;
-    bottom: 10rem;
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: -11rem;
     // margin-top: 12rem;
 
     .card {
@@ -72,6 +75,7 @@
         border: none;
         overflow: hidden;
         transition: all 0.5s ease-out;
+        position: relative;
         &:hover {
             background-image: linear-gradient(to top, #bd3426, yellow);
             .card-footer {
@@ -96,6 +100,14 @@
                 color: black;
                 font-size: 30px;
             }
+        }
+    }
+}
+
+@media (max-width: 1290px) {
+    .header {
+        .header-card{
+            margin-top: auto;
         }
     }
 }

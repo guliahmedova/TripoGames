@@ -307,7 +307,7 @@ li {
   position: relative;
   transition: all 0.5s ease-in-out;
 }
-.header .her0-img {
+.header .hero-img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -316,6 +316,7 @@ li {
   width: auto;
   position: absolute;
   top: 0;
+  bottom: 0%;
   color: #272443;
 }
 .header .content .header-title {
@@ -332,10 +333,17 @@ li {
   gap: 1rem;
   margin-top: 2.5rem;
 }
+.header .content .img img {
+  height: auto;
+  width: a;
+}
 
 .header-card {
-  position: relative;
-  bottom: 10rem;
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin-top: -11rem;
 }
 .header-card .card {
   border-radius: 10px;
@@ -399,6 +407,7 @@ li {
   border: none;
   overflow: hidden;
   transition: all 0.5s ease-out;
+  position: relative;
 }
 .header-card .custom-card:hover {
   background-image: linear-gradient(to top, #bd3426, yellow);
@@ -425,6 +434,11 @@ li {
   font-size: 30px;
 }
 
+@media (max-width: 1290px) {
+  .header .header-card {
+    margin-top: auto;
+  }
+}
 .home-about-sec .title-content {
   color: #272443;
   display: flex;
@@ -615,7 +629,6 @@ li {
   margin-top: 10rem;
 }
 .parralex-sec .top-parallax {
-  background-color: var(--clr-dark);
   background-image: url("~/public/images/home/dragon.webp");
   background-blend-mode: overlay;
   background-size: cover;
@@ -647,7 +660,6 @@ li {
   padding: 1rem;
 }
 .parralex-sec .bottom-parallax {
-  background-color: var(--clr-dark);
   background-image: url("~/public/images/home/stars.webp");
   background-blend-mode: overlay;
   background-size: cover;
@@ -814,4 +826,207 @@ li {
 }
 .parralex-sec .bottom-parallax .right-side .send-email form input:hover {
   border: 2px solid black;
+}
+
+main {
+  width: 100%;
+  overflow: hidden;
+  font-family: "Expletus Sans", cursive;
+}
+
+.hero {
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  margin: 0 auto;
+  height: auto;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 4.1em;
+  margin: auto;
+  position: absolute;
+  top: 120px;
+  left: 0;
+  font-weight: 900;
+  right: 0;
+  color: #272443;
+  bottom: 0;
+  z-index: 1;
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin: auto;
+  position: absolute;
+  top: 220px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #272443;
+  z-index: 1;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.bar {
+  width: 100%;
+  height: 200px;
+  opacity: 0.3;
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: 90px;
+  -ms-transform-origin: 100% 0%;
+  -webkit-transform-origin: 100% 0%;
+  transform-origin: 100% 0%;
+  -webkit-animation: roll-out 1.2s ease-out;
+  -moz-animation: roll-out 1.2s ease-out;
+  animation: roll-out 1.2s ease-out;
+}
+
+.hero h1, .hero p {
+  -webkit-animation: scale-in 1.3s ease-out;
+  -moz-animation: scale-in 1.3s ease-out;
+  animation: scale-in 1.3s ease-out;
+}
+
+.imgs {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.imgs img {
+  width: auto;
+  height: auto;
+}
+
+@media all and (max-width: 768px) {
+  .hero {
+    height: 50vw;
+  }
+  .bar {
+    height: 26vw;
+    top: 10vw;
+  }
+  .hero h1 {
+    font-size: 8vw;
+    top: 13vw;
+  }
+  .hero p {
+    font-size: 3vw;
+    top: 27vw;
+  }
+}
+.hiring-sec {
+  color: #272443;
+  margin: 10rem 0;
+}
+.hiring-sec p {
+  font-weight: 600;
+  font-size: 21px;
+}
+.hiring-sec h1 {
+  font-size: 50px;
+  font-weight: 900;
+  margin: 2rem 0;
+}
+.hiring-sec .p {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.job-cards-sec .container {
+  background-color: #da392b;
+  padding: 0 5rem;
+}
+.job-cards-sec h1 {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  margin: 5rem 0;
+  font-weight: 900;
+}
+.job-cards-sec .card {
+  background-color: transparent;
+  border: none;
+  overflow: hidden;
+}
+.job-cards-sec .card:hover .card-img-top {
+  transform: scale(1.1);
+  transition: all 0.25s ease-in-out;
+}
+.job-cards-sec .card .card-img-top {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.job-cards-sec .card .card-body .card-title {
+  color: white;
+  font-weight: 800;
+}
+.job-cards-sec .card .card-body .card-text {
+  color: white;
+  line-height: 1.5;
+}
+.job-cards-sec .card .card-body .btn {
+  background-color: #2c3051;
+  color: white;
+  padding: 0.5rem 3rem;
+  border-radius: 10px;
+}
+.job-cards-sec .card .card-body .btn:hover {
+  background-color: #113e5f;
+}
+
+.parallax-job-sec .container {
+  background-image: url("~/public/images/home/stars.webp");
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  position: relative;
+}
+.parallax-job-sec .gradient {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  background-color: black;
+  opacity: 0.3;
+}
+.parallax-job-sec .title {
+  color: white;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  margin: 10rem 0 0 4rem;
+}
+.parallax-job-sec .title p {
+  font-size: 17px;
+  font-weight: 700;
+}
+.parallax-job-sec .title h1 {
+  font-size: 50px;
+  font-weight: 900;
+}
+.parallax-job-sec .title .btn {
+  background-color: #fcff72;
+  color: #272443;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+.parallax-job-sec .title .btn:hover {
+  transition: 0.5s all ease-in-out;
+  background-color: white;
 }

@@ -1,7 +1,15 @@
 import Home from "./pages/Home";
+import Careers from "./pages/Careers";
+import { Routes, Route } from "react-router-dom";
+
 function App() {
   return (
-    <Home />
+    <>
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/careers" element={<Careers />} />
+      </Routes>
+    </>
   );
 }
 

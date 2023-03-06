@@ -4,7 +4,7 @@
 
     transition: all .5s ease-in-out;
 
-    .her0-img {
+    .hero-img {
         width: 100%;
         height: auto;
         object-fit: cover;
@@ -17,6 +17,7 @@
         width: auto;
         position: absolute;
         top: 0;
+        bottom: 0%;
         color: $base-dark-blue;
         .header-title {
             font-size: 80px;
@@ -33,6 +34,21 @@
             display: flex;
             gap: 1rem;
             margin-top: 2.5rem;
+            img{
+                height: auto;
+                width: a;
+            }
         }
     }
 }
+
+
+
+// @media only screen and(max-width:1328px) {
+//     .header{
+//         .content{
+//             position: fixed;
+//             bottom: 0%;
+//         }
+//     }
+// }
