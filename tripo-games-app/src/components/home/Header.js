@@ -28,7 +28,7 @@ export default function Header() {
         return (<HeaderCard key={card.id} {...card} />)
     })
 
-    console.log(headerCards)
+    // console.log(headerCards)
 
 
     return (
@@ -53,7 +53,6 @@ export default function Header() {
                         <div className="img">
                             <a href="#">
                                 <img src="./images/home/applestore.webp" alt="" />
-
                             </a>
                             <a href="#">
                                 <img src="./images/home/googleplay.webp" alt="" />

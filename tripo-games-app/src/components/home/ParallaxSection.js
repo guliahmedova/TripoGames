@@ -1,13 +1,23 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import AOS from 'aos';
 
 export default function ParallaxSection() {
+
+    useEffect(() => {
+        AOS.init({ duration: 2000 })
+    }, [])
     return (
-        <section className="parralex-sec">
+        <section className="parralex-sec"
+        >
             <div className="top-parallax">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
-                            <div className="title">
+                            <div className="title" data-aos="fade-zoom-in"
+                                data-aos-easing="ease-in-back"
+                                data-aos-delay="300"
+                                data-aos-offset="0">
                                 <span>Join Our Team</span>
                                 <h1>It takes the world's best talent <br /> to change the game.</h1>
                                 <Link to="/careers">Explore Careers</Link>
@@ -51,7 +61,7 @@ export default function ParallaxSection() {
                         </div>
                         <div className="col-lg-6">
                             <div className="right-side">
-                                <img src="./images/home/mouse.webp" alt="" />
+                                <img  src="./images/home/mouse.webp" alt="" />
                                 <div className="send-email">
                                     <h1>Subscribe to Our Newsletter</h1>
                                     <form action="#">

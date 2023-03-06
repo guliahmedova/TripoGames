@@ -148,13 +148,15 @@
         .right-side {
             display: flex;
             justify-content: center;
+            position: relative;
             img {
                 width: 488px;
                 height: 414px;
+                position: absolute;
                 object-fit: cover;
+                bottom: 0;
                 object-position: 50% 50%;
                 position: absolute;
-                bottom: 721px;
             }
             .send-email {
                 position: absolute;

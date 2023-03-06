@@ -1,8 +1,19 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+
+
 
 export default function OurGamesCard(props) {
+    useEffect(() => {
+        AOS.init({ duration: 2000 })
+    }, [])
+
     return (
-        <div className={`card mt-5 card-${props.id}`}>
+        <div className={`card mt-5 card-${props.id}`}
+        
+        data-aos="fade-right"
+        >
             <div className="card-header">
                 <Link to={props.to} >
                     <img src={props.avatar} alt="" className="img" />

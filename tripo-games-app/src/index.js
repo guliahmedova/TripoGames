@@ -6,7 +6,9 @@ import 'bootstrap/dist/css/bootstrap-grid.min.css'
 import 'animate.css';
 import './css/style.css';
 import App from './App';
+import 'aos/dist/aos.css';
 import { BrowserRouter as Router } from "react-router-dom";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

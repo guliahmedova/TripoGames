@@ -2,9 +2,11 @@
     width: 100%;
     position: relative;
 
-    .herp-img {
-        width: 1823.04px;
-        height: 800px;
+    transition: all .5s ease-in-out;
+
+    .her0-img {
+        width: 100%;
+        height: auto;
         object-fit: cover;
         // left: -151.92px;
         // top: 0px;

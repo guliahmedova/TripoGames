@@ -1,12 +1,21 @@
 import OurGamesData from "../../datas/OurGamesData";
 import OurGamesCard from "./OurGamesCard";
+import { useEffect } from "react";
+import AOS from 'aos';
 
 export default function OurGames() {
     const ourGamesCards = OurGamesData.map((item) => {
         return <OurGamesCard key={item.id} {...item} />
     })
+
+    useEffect(() => {
+        AOS.init({ duration: 2000 })
+    }, [])
     return (
-        <section className="our-games-sec">
+        <section className="our-games-sec"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+        >
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12 mt-5">
@@ -20,7 +29,7 @@ export default function OurGames() {
 
                 <div className="cards">
                     {ourGamesCards}
-                    <div className="img-card">
+                    <div className="img-card" data-aos="fade-right">
                         <img src="./images/home/p_4.webp" alt="" />
                     </div>
                 </div>

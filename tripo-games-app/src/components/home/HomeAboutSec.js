@@ -1,8 +1,19 @@
-import { Link } from "react-router-dom"
+import { useEffect } from "react";
+import AOS from 'aos';
+import { Link } from "react-router-dom";
+
 
 export default function HomeAboutSec() {
+
+    useEffect(() => {
+        AOS.init({ duration: 2000 })
+    }, [])
+
     return (
-        <section className="home-about-sec my-5">
+        <section className="home-about-sec my-5"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+        >
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12">
