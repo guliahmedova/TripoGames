@@ -31,7 +31,7 @@ export default function ParallaxSection() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6">
-                            <div className="left-side">
+                            <div className="left-side" id="contact-part">
                                 <div className="title">
                                     <h1>Get in Touch</h1>
                                     <p>I'm a paragraph. Click here to add <br /> your own text and edit me.</p>

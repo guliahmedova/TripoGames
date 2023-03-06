@@ -40,7 +40,7 @@ export default function Navbar() {
                     <li className="item"><Link to="/games">Games</Link></li>
                     <li className="item"><Link to="/careers">Careers</Link></li>
                     <li className="item"><Link to="/about">About</Link></li>
-                    <li className="item"><Link to="/contact">Contact</Link></li>
+                    <li className="item"><a href="#contact-part">Contact</a></li>
                 </ul>
 
                 <button className="mobile-menu-icon"

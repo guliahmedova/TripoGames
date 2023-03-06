@@ -8,6 +8,8 @@ navbar
 2. nav elementlerine clicke edende rengi deyismesi 
 
 
+- Contact useref yazacayiq mence
+
 
 Home Page 
 1. scroll animations + 

@@ -1232,3 +1232,226 @@ main {
   text-align: center;
   font-weight: 900;
 }
+
+.about-top-sec {
+  margin-top: 10rem;
+}
+.about-top-sec .title {
+  color: #272443;
+}
+.about-top-sec .title span {
+  font-size: 21px;
+}
+.about-top-sec .title h1 {
+  font-size: 50px;
+  font-weight: 900;
+  margin: 2rem 0;
+}
+
+.about-bottom-hero-sec {
+  display: flex;
+}
+.about-bottom-hero-sec .left-side {
+  width: 40%;
+  height: 75vh;
+}
+.about-bottom-hero-sec .left-side img {
+  height: 100%;
+}
+.about-bottom-hero-sec .right-side {
+  background-color: #da392b;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+}
+.about-bottom-hero-sec .right-side p {
+  color: white;
+  font-size: 18px;
+  line-height: 1.6em;
+}
+
+.about-cards-sec {
+  background-image: url("~/public/images/about/parallax.webp");
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  margin: 0%;
+  padding: 0%;
+}
+.about-cards-sec .gradient {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  background-color: whitesmoke;
+  opacity: 0.6;
+}
+.about-cards-sec .title {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 900;
+  color: #272443;
+  position: relative;
+}
+.about-cards-sec .card {
+  box-shadow: rgba(215, 58, 58, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  padding: 2rem;
+}
+.about-cards-sec .card h1 {
+  font-size: 34px;
+  color: #da392b;
+  font-weight: 800;
+}
+.about-cards-sec .card p {
+  color: #272443;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+.team-sec .container {
+  background-color: #272443;
+}
+.team-sec .title {
+  font-size: 50px;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  margin: 6rem 0;
+}
+.team-sec .card {
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  overflow: hidden;
+}
+.team-sec .card .gradient {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  border-radius: 10px;
+  background-color: rgb(212, 104, 104);
+  opacity: 0.3;
+  visibility: hidden;
+}
+.team-sec .card:hover {
+  transition: 0.5s all ease;
+}
+.team-sec .card:hover .gradient {
+  visibility: visible;
+}
+.team-sec .card:hover img {
+  border-radius: 10px;
+  transform: scale(1.1);
+}
+.team-sec .card h1 {
+  font-size: 21px;
+  font-weight: 800;
+  margin-top: 1rem;
+  position: relative;
+}
+.team-sec .card p {
+  position: relative;
+}
+.team-sec .card img {
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  object-fit: cover;
+  height: 322.66px;
+}
+
+.our-offices-sec {
+  background-image: url("~/public/images/about/company.webp");
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  position: relative;
+  margin-top: 7rem;
+}
+.our-offices-sec .gradient {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  background-color: #da392b;
+  opacity: 0.6;
+}
+.our-offices-sec .left {
+  position: relative;
+  color: white;
+  top: 10rem;
+}
+.our-offices-sec .left h3 {
+  font-size: 21px;
+  font-weight: 800;
+}
+.our-offices-sec .left h1 {
+  font-size: 50px;
+  font-weight: 900;
+  margin: 1rem 0;
+}
+.our-offices-sec .left p {
+  font-size: 18px;
+  line-height: 1.6em;
+}
+.our-offices-sec .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+  padding-top: 8rem;
+  position: relative;
+}
+.our-offices-sec .card .card-header {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: -3rem;
+}
+.our-offices-sec .card .card-header img {
+  width: 252px;
+  height: 159px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+.our-offices-sec .card .card-context {
+  color: #272443;
+}
+.our-offices-sec .card .card-context h2 {
+  font-size: 21px;
+  margin: 1rem 0;
+}
+.our-offices-sec .card .card-context p {
+  font-size: 16px;
+  line-height: 1.6em;
+}
+.our-offices-sec .card .card-footer {
+  border: none;
+  background-color: #272443;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: 0.5s all ease;
+}
+.our-offices-sec .card .card-footer:hover {
+  background-color: #da392b;
+}
+.our-offices-sec .card .card-footer a {
+  color: white;
+}

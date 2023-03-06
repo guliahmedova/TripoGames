@@ -1,0 +1,56 @@
+.team-sec {
+    .container {
+        background-color: $base-dark-blue;
+    }
+    .title {
+        font-size: 50px;
+        font-weight: 900;
+        color: white;
+        text-align: center;
+        margin: 6rem 0;
+    }
+    .card{
+        background-color: transparent;
+        border: none;
+        text-align: center;
+        cursor: pointer;
+        color: white;
+        overflow: hidden;
+        .gradient{
+            width: 100%;
+            height: auto;
+            position: absolute;
+            left: 0%;
+            right: 0%;
+            border-radius: 10px;
+            background-color: rgb(212, 104, 104);
+            opacity: 0.3;
+            visibility: hidden;
+        }
+        &:hover{
+            transition: .5s all ease;
+            .gradient{
+                visibility: visible;
+            }
+            img{
+                border-radius: 10px;
+                transform: scale(1.1);
+            }
+        }
+        h1{
+            font-size: 21px;
+            font-weight: 800;
+            margin-top: 1rem;
+            position: relative;
+        }
+        p{
+            position: relative;
+        }
+        img{
+            position: relative; 
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            object-fit: cover;
+            height: 322.66px;
+        }
+    }
+}
