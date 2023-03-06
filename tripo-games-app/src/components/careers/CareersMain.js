@@ -1,6 +1,5 @@
 import jobCards from "../../datas/jobCards";
 import JobCard from "./JobCard";
-import Footer from "../Footer";
 import { useEffect } from "react";
 import AOS from 'aos';
 
@@ -58,8 +57,6 @@ export default function CareersMain() {
                     </div>
                 </div>
             </section>
-
-            <Footer />
         </>
     )
 }

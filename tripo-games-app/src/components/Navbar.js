@@ -34,10 +34,10 @@ export default function Navbar() {
     return (
         <nav className={`navbar animate__animated animate__slideInDown  ${!show && 'animate'}`}>
             <div className="container">
-                <div className={`logo ${mobile ? "logo-none" : ""}`}><Link to="/">Tripo Games</Link></div>
+                <div className={`logo ${mobile ? "logo-none" : ""}`}><Link to="/home">Tripo Games</Link></div>
                 <ul className={mobile ? "nav-links-mobile" : "nav-links"}>
-                    <li className="item active-red"><Link to="/home">Home</Link></li>
-                    <li className="item"><Link to="/game">Game</Link></li>
+                    <li className="item active-red"><Link to="/">Home</Link></li>
+                    <li className="item"><Link to="/games">Games</Link></li>
                     <li className="item"><Link to="/careers">Careers</Link></li>
                     <li className="item"><Link to="/about">About</Link></li>
                     <li className="item"><Link to="/contact">Contact</Link></li>

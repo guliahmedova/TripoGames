@@ -1,0 +1,59 @@
+.games-parallax-sec {
+    background-image: url("~/public/images/games/hero.webp");
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: relative;
+    margin-top: 15rem;
+    .gradient {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        background-color: black;
+        opacity: 0.3;
+    }
+    .card {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        position: absolute;
+        bottom: 10rem;
+        padding: 2rem;
+        .card-header {
+            background-color: white;
+            border: none;
+            display: flex;
+            gap: 1rem;
+            img {
+                width: 78px;
+                height: 78px;
+                object-fit: cover;
+                border-radius: 10px;
+                border: 5px solid $base-dark-blue;
+            }
+
+            h1{
+                font-weight: 800;
+                font-size: 21px;
+                color: $base-dark-blue;
+            }
+            p{
+                color: $base-dark-blue;
+            }
+        }
+        .card-body{
+            p{
+                font-size: 50px;
+                color: $base-dark-blue;
+                font-weight: 900;
+            }
+        }
+        p{
+            line-height:1.6em; 
+            font-size:18px;
+        }
+    }
+}

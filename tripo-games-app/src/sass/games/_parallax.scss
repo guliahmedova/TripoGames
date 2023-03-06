@@ -1,0 +1,61 @@
+.games-parallax-sec-second {
+    background-image: url("~/public/images/games/parallax.webp");
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: relative;
+    margin-top: 15rem;
+    .gradient {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        background-color: #c46454;
+        opacity: 0.7;
+    }
+    .title {
+        position: absolute;
+        top: 25%;
+        bottom: 0%;
+        left: 0%;
+        right: 0%;
+        text-align: center;
+        color: white;
+        h1 {
+            font-size: 50px;
+            margin: 1rem 0;
+            font-weight: 900;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6em;
+        }
+    }
+}
+
+.play-now-card {
+    width: 100%;
+    .row {
+        display: flex;
+        justify-content: center;
+    }
+    .card {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        padding: 3rem;
+        border: 0ch;
+        box-shadow: rgba(194, 45, 45, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+        h1{
+            font-size: 50px;
+            color: $base-dark-blue;
+            text-align: center;
+            font-weight: 900;
+        }
+    }
+}

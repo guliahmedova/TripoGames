@@ -5,6 +5,7 @@
 
 navbar
 1. dropdown
+2. nav elementlerine clicke edende rengi deyismesi 
 
 
 

@@ -1030,3 +1030,205 @@ main {
   transition: 0.5s all ease-in-out;
   background-color: white;
 }
+
+.games-parallax-sec {
+  background-image: url("~/public/images/games/hero.webp");
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  position: relative;
+  margin-top: 15rem;
+}
+.games-parallax-sec .gradient {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  background-color: black;
+  opacity: 0.3;
+}
+.games-parallax-sec .card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: absolute;
+  bottom: 10rem;
+  padding: 2rem;
+}
+.games-parallax-sec .card .card-header {
+  background-color: white;
+  border: none;
+  display: flex;
+  gap: 1rem;
+}
+.games-parallax-sec .card .card-header img {
+  width: 78px;
+  height: 78px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 5px solid #272443;
+}
+.games-parallax-sec .card .card-header h1 {
+  font-weight: 800;
+  font-size: 21px;
+  color: #272443;
+}
+.games-parallax-sec .card .card-header p {
+  color: #272443;
+}
+.games-parallax-sec .card .card-body p {
+  font-size: 50px;
+  color: #272443;
+  font-weight: 900;
+}
+.games-parallax-sec .card p {
+  line-height: 1.6em;
+  font-size: 18px;
+}
+
+.screenshots-sec .title {
+  font-size: 34px;
+  font-weight: 800;
+  color: #272443;
+}
+.screenshots-sec .img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  overflow: hidden;
+}
+.screenshots-sec .img img {
+  border-radius: 10px;
+  object-fit: cover;
+}
+.screenshots-sec .img img:hover {
+  transform: scale(1.1);
+  transition: 0.5s all ease-in-out;
+}
+
+.reviews-sec .title {
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+  align-items: center;
+}
+.reviews-sec .title .range-box {
+  background-color: white;
+  height: 102px;
+  width: 250px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(202, 62, 62, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.reviews-sec .title .range-box .range {
+  width: 178px;
+  background-color: #da392b;
+  border-radius: 50px;
+}
+.reviews-sec .title .range-box .range .range-span {
+  height: 100%;
+  color: white;
+  display: flex;
+  padding-top: 0.9rem;
+  padding-bottom: 0;
+  justify-content: center;
+}
+.reviews-sec .title .range-box .range .range-span p {
+  width: 80%;
+  border-radius: 50px;
+  text-align: center;
+  color: #272443;
+  background-color: white;
+}
+.reviews-sec .title h1 {
+  font-size: 50px;
+  font-weight: 900;
+  color: #272443;
+}
+.reviews-sec .card {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  color: #272443;
+  border: 1px solid #272443;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+.reviews-sec .card p {
+  font-size: 16px;
+  line-height: 1.6em;
+}
+.reviews-sec .card h1 {
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.games-parallax-sec-second {
+  background-image: url("~/public/images/games/parallax.webp");
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  position: relative;
+  margin-top: 15rem;
+}
+.games-parallax-sec-second .gradient {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  background-color: #c46454;
+  opacity: 0.7;
+}
+.games-parallax-sec-second .title {
+  position: absolute;
+  top: 25%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  text-align: center;
+  color: white;
+}
+.games-parallax-sec-second .title h1 {
+  font-size: 50px;
+  margin: 1rem 0;
+  font-weight: 900;
+}
+.games-parallax-sec-second .title p {
+  font-size: 18px;
+  line-height: 1.6em;
+}
+
+.play-now-card {
+  width: 100%;
+}
+.play-now-card .row {
+  display: flex;
+  justify-content: center;
+}
+.play-now-card .card {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 3rem;
+  border: 0ch;
+  box-shadow: rgba(194, 45, 45, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.play-now-card .card h1 {
+  font-size: 50px;
+  color: #272443;
+  text-align: center;
+  font-weight: 900;
+}
