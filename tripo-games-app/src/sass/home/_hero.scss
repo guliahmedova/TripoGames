@@ -1,21 +1,21 @@
-main{
+main {
   width: 100%;
   overflow: hidden;
-  font-family: 'Expletus Sans', cursive;
+  font-family: "Expletus Sans", cursive;
 }
-.hero{
+.hero {
   width: 100%;
-  height: 500px;
+  height: auto;
   text-align: center;
   margin: 0 auto;
   height: auto;
-  position: relative; 
+  position: relative;
 }
 
-.hero h1{
+.hero h1 {
   font-size: 4.1em;
   margin: auto;
-  position: absolute; 
+  position: absolute;
   top: 120px;
   left: 0;
   font-weight: 900;
@@ -24,67 +24,71 @@ main{
   bottom: 0;
   z-index: 1;
 }
-.hero p{
+.hero p {
   font-size: 1.5em;
   margin: auto;
-  position: absolute; 
+  position: absolute;
   top: 220px;
   left: 0;
   right: 0;
   bottom: 0;
   color: $base-dark-blue;
-   z-index: 1;
+  z-index: 1;
 }
-.hero img{
+.hero {
   width: 100%;
+  background-image: url("~/public/images/home/hero_image.webp");
+  height: 90vh;
+  background-position: 0px -100px;
 }
-.bar{
+.bar {
   width: 100%;
   height: 200px;
- 
+
   opacity: 0.3;
-  position: absolute; 
+  position: absolute;
   z-index: 0;
   left: 0;
   top: 90px;
   -ms-transform-origin: 100% 0%;
   -webkit-transform-origin: 100% 0%;
   transform-origin: 100% 0%;
-   -webkit-animation: roll-out 1.2s ease-out ;
-  -moz-animation: roll-out 1.2s ease-out ;
-    animation: roll-out 1.2s ease-out ; 
+  -webkit-animation: roll-out 1.2s ease-out;
+  -moz-animation: roll-out 1.2s ease-out;
+  animation: roll-out 1.2s ease-out;
 }
-.hero h1, .hero p{
+.hero h1,
+.hero p {
   -webkit-animation: scale-in 1.3s ease-out;
-  -moz-animation: scale-in 1.3s  ease-out;
-    animation: scale-in 1.3s ease-out; 
+  -moz-animation: scale-in 1.3s ease-out;
+  animation: scale-in 1.3s ease-out;
 }
 
-.imgs{
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    gap: 1rem;
-    img{
-        width: auto;
-        height: auto;
-    }
+.imgs {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+  img {
+    width: auto;
+    height: auto;
+  }
 }
+
 @media all and (max-width: 768px) {
-  .hero{
+  .hero {
     height: 50vw;
   }
-  .bar{
+  .bar {
     height: 26vw;
     top: 10vw;
   }
-  .hero h1{
+  .hero h1 {
     font-size: 8vw;
     top: 13vw;
   }
-  .hero p{
+  .hero p {
     font-size: 3vw;
     top: 27vw;
   }
- 
 }

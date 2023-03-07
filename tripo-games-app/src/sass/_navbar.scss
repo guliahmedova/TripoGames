@@ -63,7 +63,8 @@
                 transition: 0.5s all ease;
                 background-color: $base-red;
                 a {
-                    color: white !important;
+                    color: white;
+                    text-decoration: underline white 3px;
                 }
             }
         }
@@ -83,6 +84,11 @@
     }
 }
 
+.active-link {
+    color: $base-red;
+    background-color: yellow;
+}
+
 .logo-none {
     display: none;
 }
@@ -95,6 +101,10 @@
     top: 0%;
     transition: 0.3s linear;
     z-index: 10;
+}
+
+nav a.active {
+    text-decoration: underline gray 3px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -140,5 +150,3 @@
         }
     }
 }
-
-

@@ -10,7 +10,7 @@ export default function HomeAboutSec() {
     }, [])
 
     return (
-        <section className="home-about-sec my-5"
+        <section className="home-about-sec"
             data-aos="fade-up"
             data-aos-anchor-placement="top-center"
         >

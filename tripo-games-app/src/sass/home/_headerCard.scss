@@ -3,8 +3,12 @@
     display: flex;
     flex-direction: column;
     height: auto;
-    margin-top: -11rem;
-    // margin-top: 12rem;
+    position: absolute;
+
+    left: 0%;
+    right: 0%;
+    top: 30rem;
+    bottom: 0;
 
     .card {
         border-radius: 10px;
@@ -106,7 +110,7 @@
 
 @media (max-width: 1290px) {
     .header {
-        .header-card{
+        .header-card {
             margin-top: auto;
         }
     }

@@ -169,7 +169,8 @@ li {
   background-color: #da392b;
 }
 .navbar .nav-links .item:hover a {
-  color: white !important;
+  color: white;
+  text-decoration: underline white 3px;
 }
 .navbar .mobile-menu-icon {
   border: none;
@@ -180,6 +181,11 @@ li {
 
 .active-red a {
   color: #da392b !important;
+}
+
+.active-link {
+  color: #da392b;
+  background-color: yellow;
 }
 
 .logo-none {
@@ -194,6 +200,10 @@ li {
   top: 0%;
   transition: 0.3s linear;
   z-index: 10;
+}
+
+nav a.active {
+  text-decoration: underline gray 3px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -343,7 +353,11 @@ li {
   display: flex;
   flex-direction: column;
   height: auto;
-  margin-top: -11rem;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 30rem;
+  bottom: 0;
 }
 .header-card .card {
   border-radius: 10px;
@@ -438,6 +452,9 @@ li {
   .header .header-card {
     margin-top: auto;
   }
+}
+.home-about-sec {
+  margin-top: 20rem;
 }
 .home-about-sec .title-content {
   color: #272443;
@@ -836,7 +853,7 @@ main {
 
 .hero {
   width: 100%;
-  height: 500px;
+  height: auto;
   text-align: center;
   margin: 0 auto;
   height: auto;
@@ -868,8 +885,11 @@ main {
   z-index: 1;
 }
 
-.hero img {
+.hero {
   width: 100%;
+  background-image: url("~/public/images/home/hero_image.webp");
+  height: 90vh;
+  background-position: 0px -100px;
 }
 
 .bar {
@@ -888,7 +908,8 @@ main {
   animation: roll-out 1.2s ease-out;
 }
 
-.hero h1, .hero p {
+.hero h1,
+.hero p {
   -webkit-animation: scale-in 1.3s ease-out;
   -moz-animation: scale-in 1.3s ease-out;
   animation: scale-in 1.3s ease-out;
@@ -1249,27 +1270,26 @@ main {
 }
 
 .about-bottom-hero-sec {
-  display: flex;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .about-bottom-hero-sec .left-side {
-  width: 40%;
-  height: 75vh;
-}
-.about-bottom-hero-sec .left-side img {
-  height: 100%;
+  background-image: url("~/public/images/about/hero.webp");
+  background-position: 200px -100px;
+  background-repeat: no-repeat;
 }
 .about-bottom-hero-sec .right-side {
   background-color: #da392b;
-  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 4rem 0;
 }
 .about-bottom-hero-sec .right-side p {
   color: white;
   font-size: 18px;
+  margin: 1rem 0;
   line-height: 1.6em;
 }
 

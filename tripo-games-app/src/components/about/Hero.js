@@ -1,4 +1,9 @@
 export default function Hero() {
+    window.addEventListener('scroll', function () {
+        let pageY = window.pageYOffset;
+        let hero = this.document.querySelector(".left-side");
+        hero.style.backgroundPosition = `-${pageY * .25}px -100px`
+    })
     return (
         <>
             <section className="about-top-sec mb-5">
@@ -19,7 +24,6 @@ export default function Hero() {
 
             <section className="about-bottom-hero-sec mt-5">
                 <div className="left-side">
-                    <img src="./images/about/hero.webp" alt="" />
                 </div>
                 <div className="right-side">
                     <div>

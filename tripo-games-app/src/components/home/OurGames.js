@@ -11,6 +11,7 @@ export default function OurGames() {
     useEffect(() => {
         AOS.init({ duration: 2000 })
     }, [])
+    
     return (
         <section className="our-games-sec"
         data-aos="fade-up"

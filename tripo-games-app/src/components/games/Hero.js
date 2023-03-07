@@ -1,11 +1,16 @@
+import { useEffect } from "react";
+import AOS from 'aos';
 export default function Hero() {
+    useEffect(() => {
+        AOS.init({ duration: 2000 })
+    }, [])
     return (
         <section className="games-parallax-sec">
             <div className="gradient"></div>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6">
-                        <div className="card">
+                        <div className="card" data-aos="fade-up">
                             <div className="card-header">
                                 <img src="./images/home/p_1.webp" alt="" />
                                 <div>
